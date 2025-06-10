@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  shortlink:
+    image: hunterluo/shortlink:latest
+    container_name: shortlink-service
+    ports:
+      - "5500:5000"  # 映射到主机的8080端口
+    volumes:
+      - ./data:/app/data  # 挂载数据库目录
+    environment:
+      - ADMIN_USERNAME=hunter  # 默认用户名为admin
+      - ADMIN_PASSWORD=lw123456  # 默认密码为admin123
+    restart: unless-stopped
