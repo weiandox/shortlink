@@ -1,8 +1,8 @@
 # shortlink
 极简短链系统（Python+Sqlite）
 
-推荐docker-compose部署
-···yml
+# 推荐docker-compose部署
+```yaml
 version: '3'
 
 services:
@@ -18,3 +18,5 @@ services:
       - ADMIN_PASSWORD=admin123# 默认密码为admin123
     restart: unless-stopped
 ```
+
+
