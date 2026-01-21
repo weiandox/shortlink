@@ -15,7 +15,7 @@ services:
       - ./data:/app/data  # 挂载数据库目录
     environment:
       - ADMIN_USERNAME=admin # 默认用户名为admin
-      - ADMIN_PASSWORD=admin123# 默认密码为admin123
+      - ADMIN_PASSWORD=admin123 #默认密码为admin123
     restart: unless-stopped
 ```
 
